@@ -19,6 +19,9 @@ class Status(Enum):
     FAILED = "FAILED"
 
 
+# Set the API key
+cc.save_api_key(os.environ["CC_API_KEY"])
+
 HIGH_COMPUTE = cc.CloudExecutor(num_cpus=2)
 
 LOW_COMPUTE = cc.CloudExecutor(num_cpus=1)
@@ -106,8 +109,6 @@ def write_result_to_file(runid, result, results_file):
 
 
 if __name__ == "__main__":
-    # Set the API key
-    cc.save_api_key(os.environ["CC_API_KEY"])
 
     runid = cc.dispatch(covalent_workflow)(num_runs=10)
     update_runid(runid, Status.PENDING)
