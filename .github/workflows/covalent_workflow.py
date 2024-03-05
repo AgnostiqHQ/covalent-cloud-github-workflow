@@ -111,8 +111,8 @@ def write_result_to_file(runid, result, results_file):
 if __name__ == "__main__":
 
     runid = cc.dispatch(covalent_workflow)(num_runs=10)
-    update_runid(runid, Status.PENDING)
+    update_runid(runid, Status.PENDING, runid_file=RUNID_FILE)
     check_and_update_status(
-        runid_file=".github/workflows/runid_status.csv",
-        results_file=".github/workflows/results.csv",
+        runid_file=RUNID_FILE,
+        results_file=RESULTS_FILE,
     )
