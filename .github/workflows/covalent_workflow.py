@@ -25,6 +25,8 @@ cc.save_api_key(os.environ["CC_API_KEY"])
 HIGH_COMPUTE = cc.CloudExecutor(num_cpus=2)
 
 LOW_COMPUTE = cc.CloudExecutor(num_cpus=1)
+RUNID_FILE = "runid_status.csv"
+RESULTS_FILE = "results.csv"
 
 
 @ct.electron(executor=HIGH_COMPUTE)
@@ -42,9 +44,7 @@ def covalent_workflow(num_runs=10):
     return results
 
 
-def update_runid(
-    runid, status=Status.PENDING, runid_file=".github/workflows/runid_status.csv"
-):
+def update_runid(runid, status=Status.PENDING, runid_file=RUNID_FILE):
     # Check if the CSV file exists
     if not os.path.exists(runid_file):
         # Create a new CSV file with headers
@@ -68,8 +68,8 @@ def update_runid(
 
 
 def check_and_update_status(
-    runid_file=".github/workflows/runid_status.csv",
-    results_file=".github/workflows/results.csv",
+    runid_file=RUNID_FILE,
+    results_file=RESULTS_FILE,
 ):
     with open(runid_file, "r") as file:
         reader = csv.reader(file)
