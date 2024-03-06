@@ -18,8 +18,15 @@ if __name__ == "__main__":
     RESULTS_FILE = "results.csv"
 
     runid = cc.dispatch(covalent_workflow)(num_runs=10)
+    print(f"Dispatched runid: {runid} Submitted")
+
     update_runid(runid, Status.PENDING, runid_file=RUNID_FILE)
+    print(f"Runid: {runid} Status: {Status.PENDING.value} Updated")
+
     check_and_update_status(
         runid_file=RUNID_FILE,
         results_file=RESULTS_FILE,
+    )
+    print(
+        f"Old runid status updated in {RUNID_FILE} and results written to {RESULTS_FILE}"
     )
