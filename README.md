@@ -18,9 +18,9 @@ If you wish to read more, please take a look at the companion blog post, which w
 </p>
 
 
-1. Job Submission: The workflow dispatches a series of high-performance functions to Covalent Cloud. For demonstration, these functions simulate intensive computation with a sleep operation and randomly return "done" or "failed" as the outcome.
-2. Status Tracking: The run status for each dispatched job is maintained in the `runid_status.csv` file.
-3. Result Storage: Upon completion, results are collected and stored in the `results.csv` file.
+1. **Job Submission:** The workflow dispatches a series of high-performance functions to Covalent Cloud. For demonstration, these functions simulate intensive computation with a sleep operation and randomly return "done" or "failed" as the outcome.
+2. **Status Tracking:** The run status for each dispatched job is maintained in the `runid_status.csv` file.
+3. **Result Storage:** Upon completion, results are collected and stored in the `results.csv` file.
 
 ## Getting Started
 
