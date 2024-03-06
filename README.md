@@ -11,7 +11,7 @@ If you wish to read more, please take a look at the companion blog post, which w
 
 > Note: This is just a template to get you started. You can customize it to fit your specific needs.
 
-## Overview
+## Overview 📝
 
 <p align="center">
   <img src="./assets/workflow.gif" width="50%" />
@@ -22,14 +22,14 @@ If you wish to read more, please take a look at the companion blog post, which w
 2. **Status Tracking:** The run status for each dispatched job is maintained in the `runid_status.csv` file.
 3. **Result Storage:** Upon completion, results are collected and stored in the `results.csv` file.
 
-## Getting Started
+## Getting Started 👐
 
 1. **Clone the Repository:** Get your own copy of this repository.
 2. **Install Dependencies:** Install required packages (`pip install -r .github/workflows/requirements.txt`)
 3. **Covalent Cloud API Key:** Set your Covalent Cloud API key as a GitHub secret named `CC_API_KEY`.
 
 
-## Potential Enhancements
+## Potential Enhancements ✈️
 
 - Customization 🛠️ : Adapt to your workflow - modify `covalent_workflow.py` to replace the placeholder functions with your own computationally intensive code.
 - Flexible Triggers:  Explore different trigger mechanisms (pull requests, code changes, external webhooks) to automate your workflow.
@@ -37,7 +37,7 @@ If you wish to read more, please take a look at the companion blog post, which w
 - Database Integration:  Replace the simple CSV-based status tracking with a database solution (e.g., SQLite, PostgreSQL) for scalability and advanced querying.
 - Result Retrieval: Use Covalent primitives (cc.get_result) in other scripts or workflows to retrieve results and status updates for tasks dispatched within this workflow.
 
-## Key Takeaway
+## Key Takeaway 🗝️
 
 This template provides a solid foundation for streamlining the integration of high-performance computing tasks into your GitHub development processes. The focus is on flexibility – adapt it to fit your specific computational needs! 💪
 
