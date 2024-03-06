@@ -1,6 +1,8 @@
 # Covalent Cloud GitHub Workflow Template
 
-This repository provides a template for integrating high-performance functions on Covalent Cloud seamlessly into your GitHub Workflows. The workflow demonstrates how to dispatch compute-intensive tasks, track their status, and store results for further analysis. 
+This repository provides a template for integrating high-performance functions on Covalent Cloud seamlessly into your GitHub Workflows. The workflow demonstrates how to dispatch compute-intensive tasks, track their status, and store results for further analysis. To learn more about Covalent Cloud, visit [covalent.xyz](https://covalent.xyz).
+
+If you wish to read more, please take a look at the companion blog post, which will provide a detailed walkthrough, example use cases, and further explanations
 
 > Note: This is just a template to get you started. You can customize it to fit your specific needs.
 
@@ -27,8 +29,3 @@ This repository provides a template for integrating high-performance functions o
 ## Key Takeaway
 
 This template provides a solid foundation for streamlining the integration of high-performance computing tasks into your GitHub development processes. The focus is on flexibility – adapt it to fit your specific computational needs!
-
-
-## Blog Post
-
-A companion blog post will provide a detailed walkthrough, example use cases, and further explanations. Stay tuned for the link!
