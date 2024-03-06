@@ -4,7 +4,7 @@ import random
 import time
 import os
 
-cc.save_api_key(os.environ["CC_API_KEY"])
+
 
 HIGH_COMPUTE = cc.CloudExecutor(num_cpus=2)
 

@@ -17,6 +17,8 @@ if __name__ == "__main__":
     RUNID_FILE = "runid_status.csv"
     RESULTS_FILE = "results.csv"
 
+    cc.save_api_key(os.environ["CC_API_KEY"])
+
     runid = cc.dispatch(covalent_workflow)(num_runs=10)
     print(f"Dispatched runid: {runid} Submitted")
 
