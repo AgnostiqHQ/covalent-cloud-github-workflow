@@ -24,9 +24,9 @@ If you wish to read more, please take a look at the companion blog post, which w
 
 ## Getting Started 👐
 
-1. **Clone the Repository:** Get your own copy of this repository.
-2. **Install Dependencies:** Install required packages (`pip install -r .github/workflows/requirements.txt`)
-3. **Covalent Cloud API Key:** Set your Covalent Cloud API key as a GitHub secret named `CC_API_KEY`.
+1. Clone the Repository: Get your own copy of this repository.
+2. Install Dependencies: Install required packages (`pip install -r .github/workflows/requirements.txt`)
+3. Covalent Cloud API Key: Set your Covalent Cloud API key as a GitHub secret named `CC_API_KEY`.
 
 
 ## Potential Enhancements ✈️
