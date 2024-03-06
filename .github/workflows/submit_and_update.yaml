@@ -1,9 +1,9 @@
 name: Submit to Covalent Cloud
 
 on:
-#   schedule: # un comment to run every 30 minutes
+#   schedule: # uncomment to run every 30 minutes
     # - cron: "*/30 * * * *" 
-  workflow_dispatch:
+  workflow_dispatch: # trigger manually
 
 jobs:
   update:
