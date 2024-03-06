@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" />
+</p>
+
 # Covalent Cloud GitHub Workflow Template 🚀
 
 This repository provides a template for integrating high-performance functions on Covalent Cloud seamlessly into your GitHub Workflows. The workflow demonstrates how to dispatch compute-intensive tasks, track their status, and store results for further analysis. To learn more about Covalent Cloud, visit [covalent.xyz](https://www.covalent.xyz) and the documentation at [docs.covalent.xyz](docs.covalent.xyz/cloud). To use this, you need a Covalent Cloud account, please sign up [here](https://www.covalent.xyz/register).
@@ -30,3 +34,9 @@ If you wish to read more, please take a look at the companion blog post, which w
 ## Key Takeaway
 
 This template provides a solid foundation for streamlining the integration of high-performance computing tasks into your GitHub development processes. The focus is on flexibility – adapt it to fit your specific computational needs! 💪
+
+## Learn More 📚
+
+Covalent Cloud Documentation: [docs.covalent.xyz/cloud](docs.covalent.xyz/cloud)
+Covalent Cloud Sign Up: [covalent.xyz/register](https://www.covalent.xyz/register)
+Covalent Cloud Website: [covalent.xyz](https://www.covalent.xyz)
