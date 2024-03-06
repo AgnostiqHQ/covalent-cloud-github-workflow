@@ -4,11 +4,6 @@ import os
 sys.path.append(".")
 
 import covalent_cloud as cc
-
-cc.save_api_key(
-    os.environ["CC_API_KEY"]
-)  # Set the API key early on as importing covalent_workflow will trigger the API key check
-
 from covalent_workflow import covalent_workflow
 
 from utils import (
