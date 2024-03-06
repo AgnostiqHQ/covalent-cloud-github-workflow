@@ -6,7 +6,7 @@
 
 This repository provides a template for integrating high-performance functions on Covalent Cloud seamlessly into your GitHub Workflows. The workflow demonstrates how to dispatch compute-intensive tasks, track their status, and store results for further analysis. 
 
-If you wish to read more, please take a look at the companion blog post, which will provide a detailed walkthrough, example use cases, and further explanations ✨. To learn more about Covalent Cloud, visit [covalent.xyz](https://www.covalent.xyz) and the documentation at [docs.covalent.xyz](docs.covalent.xyz/cloud). To use this, you need a Covalent Cloud account, please sign up [here](https://www.covalent.xyz/register).
+If you wish to read more, please take a look at the companion blog post, which will provide a detailed walkthrough, example use cases, and further explanations ✨. To learn more about Covalent Cloud, visit [covalent.xyz](https://www.covalent.xyz) and the documentation at [docs.covalent.xyz](https://docs.covalent.xyz/cloud). To use this, you need a Covalent Cloud account, please sign up [here](https://www.covalent.xyz/register).
 
 
 > Note: This is just a template to get you started. You can customize it to fit your specific needs.
@@ -43,7 +43,7 @@ This template provides a solid foundation for streamlining the integration of hi
 
 ## Learn More 📚
 
-Covalent Cloud Documentation: [docs.covalent.xyz/cloud](docs.covalent.xyz/cloud)
+Covalent Cloud Documentation: [docs.covalent.xyz/cloud](https://docs.covalent.xyz/cloud)
 
 Covalent Cloud Sign Up: [covalent.xyz/register](https://www.covalent.xyz/register)
 
