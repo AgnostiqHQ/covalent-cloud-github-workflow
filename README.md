@@ -1,1 +1,34 @@
-# covalent-cloud-github-workflow
+# Covalent Cloud GitHub Workflow Template
+
+This repository provides a template for integrating high-performance functions on Covalent Cloud seamlessly into your GitHub Workflows. The workflow demonstrates how to dispatch compute-intensive tasks, track their status, and store results for further analysis. 
+
+> Note: This is just a template to get you started. You can customize it to fit your specific needs.
+
+## Overview
+
+1. Job Submission: The workflow dispatches a series of high-performance functions to Covalent Cloud. For demonstration, these functions simulate intensive computation with a sleep operation and randomly return "done" or "failed" as the outcome.
+2. Status Tracking: The run status for each dispatched job is maintained in the `runid_status.csv` file.
+3. Result Storage: Upon completion, results are collected and stored in the `results.csv` file.
+
+## Getting Started
+
+1. **Clone the Repository:** Get your own copy of this repository.
+2. **Install Dependencies:** Install required packages (`pip install -r .github/workflows/requirements.txt`)
+3. **Covalent Cloud API Key:** Set your Covalent Cloud API key as a GitHub secret named `CC_API_KEY`.
+
+
+## Potential Enhancements
+
+- Flexible Triggers:  Explore different trigger mechanisms (pull requests, code changes, external webhooks) to automate your workflow.
+- Workflow Separation: Consider separate workflows for job submission and result monitoring, potentially with different schedules, for better modularity.
+- Database Integration:  Replace the simple CSV-based status tracking with a database solution (e.g., SQLite, PostgreSQL) for scalability and advanced querying.
+- Result Retrieval: Use Covalent primitives (cc.get_result) in other scripts or workflows to retrieve results and status updates for tasks dispatched within this workflow.
+
+## Key Takeaway
+
+This template provides a solid foundation for streamlining the integration of high-performance computing tasks into your GitHub development processes. The focus is on flexibility – adapt it to fit your specific computational needs!
+
+
+## Blog Post
+
+A companion blog post will provide a detailed walkthrough, example use cases, and further explanations. Stay tuned for the link!
