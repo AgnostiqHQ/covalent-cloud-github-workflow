@@ -43,6 +43,6 @@ This template provides a solid foundation for streamlining the integration of hi
 
 ## Learn More 📚
 
-- Covalent Cloud Documentation: [docs.covalent.xyz/cloud](https://docs.covalent.xyz/)
+- Covalent Cloud Documentation: [docs.covalent.xyz](https://docs.covalent.xyz/)
 - Sign Up for Covalent Cloud: [covalent.xyz/register](https://app.covalent.xyz/register)
 - Covalent Cloud Website: [covalent.xyz](https://www.covalent.xyz)
