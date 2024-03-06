@@ -1,11 +1,12 @@
 import sys
-import time
-from enum import Enum
-
 
 sys.path.append(".")
+
+import time
+from enum import Enum
 import os
 import csv
+
 import covalent_cloud as cc
 
 
@@ -17,6 +18,7 @@ class Status(Enum):
 
 
 def update_runid(runid, status=Status.PENDING, runid_file="runid_status.csv"):
+    """Update the status of the runid in the CSV file. If the runid does not exist, add it to the CSV file."""
     # Check if the CSV file exists
     if not os.path.exists(runid_file):
         # Create a new CSV file with headers
@@ -43,6 +45,7 @@ def check_and_update_status(
     runid_file="runid_status.csv",
     results_file="results.csv",
 ):
+    """Check the status of the runids in the CSV file and update the status if the task is completed. Write the results to the results file."""
     with open(runid_file, "r") as file:
         reader = csv.reader(file)
         updated_data = []
@@ -66,6 +69,7 @@ def check_and_update_status(
 
 
 def write_result_to_file(runid, result, results_file):
+    """Write the result of a runid to the results file. If the results file does not exist, create it."""
     result.result.load()
     value = result.result.value
 
